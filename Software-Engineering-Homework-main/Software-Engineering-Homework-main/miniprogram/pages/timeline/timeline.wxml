@@ -1,0 +1,142 @@
+
+
+<scroll-view scroll-x class="bg-white nav text-center">
+  <view class="cu-item {{0==TabCur?'text-blue cur':''}}" wx:key bindtap="tabSelect" data-id="0">
+    <text class="cuIcon-activityfill"></text> 赛程
+  </view>
+  <view class="cu-item {{1==TabCur?'text-cyan cur':''}}" wx:key bindtap="tabSelect" data-id="1">
+    <text class="cuIcon-upstagefill"></text> 奖牌榜
+  </view>
+</scroll-view>
+
+<view>
+  <block wx:if="{{TabCur==0}}">
+    <view>
+      <view class="padding bg-white">
+        <view class="flex-sub text-blue">赛程进度</view>
+        <view class="cu-progress radius striped active">
+          <view class="bg-blue" style="width:{{loading?'100%':''}};">100%</view>
+        </view>
+      </view>
+<!-- 赛程参考
+https://2022.qq.com/schedule.htm?t=navhot#
+https://olympics.com/beijing-2022/olympic-games/zh/results/all-sports/olympic-schedule.htm?utm_campaign=dp_bing -->
+      <view class="cu-timeline">
+        <view class="cu-time">02-20</view>
+        <view class="cu-item text-blue">  <!-- 时间轴上的蓝色 -->
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">冰球男子组团体金牌赛</view>
+              <view class="cu-tag line-white text-lg">12:10</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex">
+                <image class="flag-in-timeline" src="/images/nation/FIN.png"></image> 
+                <view class="flex-sub text-bold"> 芬兰</view>
+                <view class="flex-twice text-bold">2</view>
+              </view>
+              <view class="flex margin-top-sm">
+                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image>
+                <view class="flex-sub"> ROC</view>
+                <view class="flex-twice">1</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">公开组四人雪车第四轮</view>
+              <view class="cu-tag line-white text-lg">11:20</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 弗朗西斯科·弗里德里希</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 约翰内斯·洛赫纳</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/CAN.png"></image> 
+                <view class="text-bold margin-right-xs"> CAN </view>
+                <view class="flex-sub"> 贾斯廷·克里普斯</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">越野滑雪 女子组30公里</view>
+              <view class="cu-tag line-white text-lg">11:00</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/NOR.png"></image> 
+                <view class="text-bold margin-right-xs"> NOR </view>
+                <view class="flex-sub"> 特蕾丝·约海于格</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/USA.png"></image> 
+                <view class="text-bold margin-right-xs"> USA </view>
+                <view class="flex-sub"> 杰茜·迪金斯</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/FIN.png"></image> 
+                <view class="text-bold margin-right-xs"> FIN </view>
+                <view class="flex-sub"> 凯尔图·尼斯卡宁</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <!-- TODO -->
+
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{TabCur==1}}">
+    <!-- 表头 -->
+    <view class="row text-white">
+      <view class="header-text1 left-alignment">名次</view>
+      <view class="header-text1 left-alignment">国家/地区</view>
+      <view>
+        <image class="medal" src="/images/gold.png"></image>
+      </view>
+      <view>
+        <image class="medal" src="/images/silver.png"></image>
+      </view>
+      <view class="">
+        <image class="medal" src="/images/bronze.png"></image>
+      </view>
+      <view class="header-text2">总计</view>
+    </view>
+
+<!-- 照这个感觉来
+https://olympics.com/beijing-2022/olympic-games/zh/results/all-sports/medal-standings.htm -->
+    <view wx:for="{{ranks}}" wx:key="rank" 
+          class="{{index%2==0 ? 'bg-color1' : 'bg-color2'}} row" >
+      <view class="header-text1 left-alignment">{{item.rank}}</view>
+      <view class="left-alignment">
+        <image class="flag" src="{{item.flag}}"></image>
+        {{item.name}}
+      </view>
+      <view class="header-text2">{{item.gold}}</view>
+      <view class="header-text2">{{item.silver}}</view>
+      <view class="header-text2">{{item.bronze}}</view>
+      <view class="header-text2">{{item.gold + item.silver + item.bronze}}</view>
+    </view>
+
+  </block>
+</view>

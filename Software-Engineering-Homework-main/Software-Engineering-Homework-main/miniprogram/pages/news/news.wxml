@@ -1,0 +1,23 @@
+<!--pages/news/news.wxml-->
+
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" easing-function="easyinOutCubic">
+  <view wx:for="{{[newsList[0],newsList[1],newsList[2]]}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.poster}}">
+      </image>
+    </swiper-item>
+  </view>
+</swiper>
+
+
+<view>
+  <view class="news-list">
+    
+    <view class="news-item" wx:for="{{newsList}}" wx:key="id">
+      <image src="{{item.poster}}"></image>
+      <text bindtap="goToDetail" data-id="{{item._id}}">{{item.title}}-{{item.add_date}}</text>
+    </view>
+    <!-- <button plain="true">{{loadMoreText}}</button> -->
+  </view>
+</view>
+ 

@@ -1,0 +1,28 @@
+<!-- <cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">关于</view>
+</cu-custom> -->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于</view>
+  <view class='text-content'>
+    <view>Hi！欢迎使用冬奥爱墩墩小程序！
+    </view>
+    <view class='margin-top-sm'>
+      “资讯”模块。
+    </view>
+    <view class='margin-top-sm'>
+      “项目”模块。
+    </view>
+    <view class='margin-top-sm'>
+      “阶段”模块。
+    </view>
+    <view class='margin-top-sm'>
+      “我的”模块。
+    </view>
+    <view class='margin-top-sm'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里支持一下！</view>
+    <view class='margin-top-sm'>
+      这里的界面调用了colorui组件库，是一个非常棒的高颜值小程序组件库。
+    </view>
+      <view class='margin-top-sm'>更多功能敬请期待！</view>
+    </view>
+  </view>

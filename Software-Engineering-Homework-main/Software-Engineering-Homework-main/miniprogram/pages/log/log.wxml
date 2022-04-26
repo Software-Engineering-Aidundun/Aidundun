@@ -1,0 +1,53 @@
+<view class="cu-timeline">
+  <view class="cu-item text-blue cuIcon-roundcheckfill">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">4.0.0</view>
+        <view class="cu-tag line-white">2022.4.9-2022.4.20</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.完成“新闻”界面</view>
+        <view>2.数据库和后端搭建</view>
+        <view>3.完成软件工程实验课课程内容</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-cyan cuIcon-roundcheckfill">
+    <view class="bg-cyan content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-cyan">3.0.0</view>
+        <view class="cu-tag line-white">2022.4.1-2022.4.8</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.完成“练习”界面</view>
+        <view>2.学习数据库连接和微信开发者工具提供的云函数</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-olive cuIcon-roundcheckfill">
+    <view class="bg-olive content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-olive">2.0.0</view>
+        <view class="cu-tag line-white">2022.3.21-2022.3.30</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.完成“我的”界面</view>
+        <view>2.完成”规划“界面</view>
+        <view>3.开展需求分析和可行性研究</view>
+        <view>4.完成软件工程第一次大作业</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-pink cuIcon-roundcheckfill">
+    <view class="bg-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">1.0.0</view>
+        <view class="cu-tag line-white">2022.3.13-2022.3.20</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.学习小程序基础知识、如组件和界面逻辑</view>
+        <view>2.实现小项目，完成天气卡片、新闻收藏等功能</view>
+      </view>
+    </view>
+  </view>
+</view>

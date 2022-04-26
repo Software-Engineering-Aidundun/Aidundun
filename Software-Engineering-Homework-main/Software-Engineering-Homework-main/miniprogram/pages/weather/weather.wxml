@@ -1,0 +1,59 @@
+<!--pages/index/index.wxml-->
+<view class="container"><text>自动定位  明日天气预测</text></view>
+
+<view class="wai">
+  <view class="left">
+    <view class="neileft">
+      <view class="leftrow">
+        <view class="leftcolumn">
+          <image class="left-ima" src="/images/weathericon/{{daily_forecast.iconDay}}.png"></image>
+          <text class="word-text">白天：{{daily_forecast.textDay}}</text>
+        </view>
+        <view class="leftcolumn">
+          <image class="left-ima" src="/images/weathericon/{{daily_forecast.iconNight}}.png"></image>
+          <text class="word-text">夜晚：{{daily_forecast.textNight}}</text>
+        </view>
+      </view>
+      <text class="word-text">\n更新时间\n</text>
+      <text class="word-text">{{time}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <view class="neiright">
+      <text class="word-text">当前城市：{{province}},{{city}},{{accurate_city}}\n</text>
+      <text class="word-text">最高温度：{{daily_forecast.tempMax}}°C \n</text>
+      <text class="word-text">最低温度：{{daily_forecast.tempMin}}°C \n</text>
+      <text class="word-text">白天风速：{{daily_forecast.windSpeedDay}}Km/h\n</text>
+      <text class="word-text">白天风力：{{daily_forecast.windScaleDay}}级\n</text>
+      <text class="word-text">日出：{{daily_forecast.sunrise}}\n</text>
+      <text class="word-text">日落：{{daily_forecast.sunset}}\n</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="container"><text>可选城市  即时天气播报</text></view>
+<!--pages/index/index.wxml-->
+<view class="wai">
+  <view class="left">
+    <view class="neileft">
+      <picker mode='region' bindchange='changeRegion'>
+        <text class="word-text">选择您要查询的城市：\n{{region}}\n</text>
+      </picker>          
+    </view>
+    <image class="weather-icon" src="/images/weathericon/{{now.icon}}.png"></image>
+    <!-- <image class="weather-icon" src="/images/QWeather-Icons-1.1.1/icons/{{now.icon}}.svg"></image> -->
+  </view>
+  <view class="right">
+    <view class="neiright">
+      <text class="word-text">当前温度：{{now.temp}}°C \n</text>
+      <text class="word-text">当前天气：{{now.text}} \n</text>
+      <text class="word-text">相对湿度：{{now.humidity}}%\n</text>
+      <text class="word-text">气压：{{now.pressure}}hPa \n</text>
+      <text class="word-text">能见度：{{now.vis}}Km \n</text>
+      <text class="word-text">风向：{{now.windDir}}\n</text>
+      <text class="word-text">风速：{{now.windSpeed}}Km/h\n</text>
+      <text class="word-text">风力：{{now.windScale}}级\n</text>
+    </view>
+  </view>
+</view>

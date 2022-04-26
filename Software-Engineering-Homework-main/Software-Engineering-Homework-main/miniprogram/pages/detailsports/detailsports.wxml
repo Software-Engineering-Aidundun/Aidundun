@@ -1,0 +1,6 @@
+<view class='margin bg-white padding radius shadow-lg'>
+  <view class="title text-xl text-center">{{intro.name}}</view>
+  <view class="margin-top">
+    <text>{{intro.content}}</text>
+  </view>
+</view>

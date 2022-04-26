@@ -1,0 +1,19 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>项目成员介绍</view>
+  <view class='text-content'>
+    <view>组长：汪亦可
+    </view>
+    <view class='margin-top-sm'>
+      组员：黄哲
+    </view>
+    <view class='margin-top-sm'>
+      组员：史鹏程
+    </view>
+    <view class='margin-top-sm'>
+      组员：伍孝飞
+    </view>
+    <view class='margin-top-sm'>
+     组员：杜扬帆
+    </view>
+    </view>
+  </view>

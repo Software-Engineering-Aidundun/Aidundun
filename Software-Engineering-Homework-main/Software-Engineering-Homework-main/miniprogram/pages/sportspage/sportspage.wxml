@@ -1,0 +1,9 @@
+
+ <view class="cu-list grid col-3 no-border">
+    <view class="cu-item" 
+        wx:for="{{sportsList}}" wx:key="id" 
+        bindtap="toSportIntro" data-id="{{item.id}}">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+</view>

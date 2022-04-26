@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/news/news",
+        "pages/weather/weather",
+        "pages/timeline/timeline",
+        "pages/sportspage/sportspage",
+        "pages/detailnews/detailnews",
+        "pages/my/my",
+        "pages/about/about",
+        "pages/log/log",
+        "pages/likes/likes",
+        "pages/introduction/introduction",
+        "pages/detailsports/detailsports"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "window": {
+        "navigationBarBackgroundColor": "#00008B",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "冬奥爱墩墩",
+        "backgroundColor": "#EEEEEE",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#00008B",
+        "list": [
+            {
+                "pagePath": "pages/news/news",
+                "text": "资讯",
+                "iconPath": "images/xinwen_black.png",
+                "selectedIconPath": "images/xinwen_blue.png"
+            },
+            {
+                "pagePath": "pages/sportspage/sportspage",
+                "text": "项目",
+                "iconPath": "images/skiing_black.png",
+                "selectedIconPath": "images/skiing_blue.png"
+            },
+            {
+                "pagePath": "pages/timeline/timeline",
+                "text": "阶段",
+                "iconPath": "images/shipin_black.png",
+                "selectedIconPath": "images/shipin_blue.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/wode_black.png",
+                "selectedIconPath": "images/wode_blue.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

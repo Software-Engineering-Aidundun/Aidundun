@@ -1,0 +1,9 @@
+<view class="myFavorite">
+  <text>我的收藏（{{number}}）</text>
+  <view class="news-list">
+    <view class="news-item" wx:for="{{newsList}}" wx:key="{{item.id}}">
+      <image src="{{item.poster}}"></image>
+      <text bindtap="goToDetail" data-id="{{item._id}}">{{item.title}}————{{item.add_date}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  <view class="myLogin">
+    <block wx:if="{{isLogin}}">
+      <image src='{{src}}'></image>
+      <text>{{nickName}}</text>
+    </block>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登录，点此登录</button>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/likes/likes" hover-class="none">
+        <text class="cuIcon-likefill text-blue"></text>
+        <text class="text-grey">我的收藏</text>
+      </navigator>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/weather/weather" hover-class="none">
+        <!-- <image src="/images/weather_blue.png" class="png" mode="aspectFit"></image> -->
+        <text class="cuIcon-noticefill text-blue"></text>
+        <text class="text-grey">天气情况</text>
+      </navigator>
+    </view>
+<!-- 点一下复制colorui的仓库链接
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
+        <text class="cuIcon-github text-blue"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view> -->
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/introduction/introduction" hover-class="none">
+        <text class="cuIcon-friendfill text-blue"></text>
+        <text class="text-grey">成员概况</text>
+      </navigator>
+    </view>
+
+    <!-- <view class="cu-item arrow">
+      <navigator class="content" url="/pages/log/log" hover-class="none">
+        <text class="cuIcon-timefill text-blue"></text>
+        <text class="text-grey">时间计划</text>
+      </navigator>
+    </view> -->
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about" hover-class="none">
+        <text class="cuIcon-creativefill text-blue"></text>
+        <text class="text-grey">项目介绍</text>
+      </navigator>
+    </view>
+
+  </view>
+</view>
