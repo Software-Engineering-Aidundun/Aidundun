@@ -8,77 +8,77 @@ Page({
         sportsList: [
             {
                 id: 0,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/suduhuabing.png',
+                icon: '../../images/project-icon/speed_skating.png',
                 name: '速度滑冰'
             },
             {
                 id: 1,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/bingqiu.png',
+                icon: '../../images/project-icon/ice_hockey.png',
                 name: '冰球'
             },
             {
                 id: 2,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/gaoshanhuaxue.png',
+                icon: '../../images/project-icon/alpine_sking.png',
                 name: '高山滑雪'
             },
             {
                 id: 3,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/binghu.png',
+                icon: '../../images/project-icon/curing.png',
                 name: '冰壶',
             },
             {
                 id: 4,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/xueche.png',
+                icon: '../../images/project-icon/bobsleigh.png',
                 name: '雪车'
             },
             {
                 id: 5,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/xueqiao.png',
+                icon: '../../images/project-icon/luge.png',
                 name: '雪橇'
             },
             {
                 id: 6,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/tiaotaihuaxue.png',
+                icon: '../../images/project-icon/ski_jumping.png',
                 name: '跳台滑雪'
             },
             {
                 id: 7,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/beiouliangxiang.png',
+                icon: '../../images/project-icon/nodic_combined.png',
                 name: '北欧两项'
             },
             {
                 id: 8,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/huayanghuabing.png',
+                icon: '../../images/project-icon/figure_skating.png',
                 name: '花样滑冰'
             },
             {
                 id: 9,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/dongjiliangxiang.png',
+                icon: '../../images/project-icon/biathlon.png',
                 name: '冬季两项'
             },
             {
                 id: 10,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/yueyehuaxue.png',
+                icon: '../../images/project-icon/cross_country_skiing.png',
                 name: '越野滑雪'
             },
             {
                 id: 11,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/ziyoushihuaxue.png',
+                icon: '../../images/project-icon/freestyle_skiing.png',
                 name: '自由式滑雪'
             },
             {
                 id: 12,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/danbanhuaxue.png', 
+                icon: '../../images/project-icon/snowboard.png', 
                 name: '单板滑雪'
             },
             {
                 id: 13,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/duandaosuhua.png',
+                icon: '../../images/project-icon/short_track_speed_skiing.png',
                 name: '短道速滑'
             },
             {
                 id: 14,
-                icon: 'https://dldir1.qq.com/dlomg/sports/bj2022/sports/gangjiaxueche.png',
+                icon: '../../images/project-icon/skeleton.png',
                 name: '钢架雪车'
             }
         ],

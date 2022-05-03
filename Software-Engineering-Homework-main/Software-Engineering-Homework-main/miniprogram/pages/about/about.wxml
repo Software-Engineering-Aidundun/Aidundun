@@ -3,21 +3,24 @@
   <view slot="content">关于</view>
 </cu-custom> -->
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
-  <view class='text-center margin-bottom text-lg  text-grey'>关于</view>
+  <view class='text-center margin-bottom text-lg  text-grey'>项目介绍</view>
   <view class='text-content'>
     <view>Hi！欢迎使用冬奥爱墩墩小程序！
     </view>
     <view class='margin-top-sm'>
-      “资讯”模块。
+      本小程序一共分为四个模块：“资讯”模块、“项目”模块、“阶段”模块和“我的”模块。
     </view>
     <view class='margin-top-sm'>
-      “项目”模块。
+      首先是“资讯”模块，您可以在这个模块浏览最新的冬奥新闻，一睹奥运健儿们的飒爽英姿，掌握新鲜出炉的各方面信息！您还可以在新闻详情页面选择收藏这条新闻，并且在“我的收藏”中快速查看自己收藏的各条精品新闻，让您在下次想要查看的时候能够便捷地找到它。
     </view>
     <view class='margin-top-sm'>
-      “阶段”模块。
+      其次是“项目”模块，该模块列举了北京冬奥会所有赛事中的15个热门项目，您可以通过点击您感兴趣的项目图标进入项目详情页查看有关该项目的详细介绍信息等等。
     </view>
     <view class='margin-top-sm'>
-      “我的”模块。
+      接着是“阶段”模块，该模块为您贴心地列举出了即将举行的各项热门赛事，您可以在这个模块了解到最新的赛事信息并加以关注。初次之外，该模块还展示了最新的奖牌榜，您可以便捷地通过此功能查看本国的奖牌数量和获奖排名。
+    </view>
+    <view class='margin-top-sm'>
+      最后是“我的”模块，除了上文提到的“我的收藏”子模块之外，我们还提供了天气模块，您可以通过此模块便捷地查询到自己所在地的天气信息，也可以查询冬奥赛场的天气信息，进而身临其境地体验最真实的冬奥赛场环境。
     </view>
     <view class='margin-top-sm'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里支持一下！</view>
     <view class='margin-top-sm'>
