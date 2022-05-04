@@ -8,7 +8,7 @@
     <text class="cuIcon-upstagefill"></text> 奖牌榜
   </view>
 </scroll-view>
- 
+
 <view>
   <block wx:if="{{TabCur==0}}">
     <view>
@@ -22,58 +22,57 @@
 https://2022.qq.com/schedule.htm?t=navhot#
 https://olympics.com/beijing-2022/olympic-games/zh/results/all-sports/olympic-schedule.htm?utm_campaign=dp_bing -->
       <view class="cu-timeline">
-        <view class="cu-time">02-19</view>
+        <view class="cu-time">02-20</view>
+        <view class="cu-item text-blue">  <!-- 时间轴上的蓝色 -->
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">冰球男子组团体金牌赛</view>
+              <view class="cu-tag line-white text-lg">12:10</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex">
+                <image class="flag-in-timeline" src="/images/nation/FIN.png"></image> 
+                <view class="flex-sub text-bold"> 芬兰</view>
+                <view class="flex-twice text-bold">2</view>
+              </view>
+              <view class="flex margin-top-sm">
+                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image>
+                <view class="flex-sub"> ROC</view>
+                <view class="flex-twice">1</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        
         <view class="cu-item text-blue">
           <view class="timeline-bg content shadow">
             <view class="cu-capsule radius">
-              <view class="cu-tag bg-white text-blue text-lg">花样滑冰混合组双人滑</view>
-              <view class="cu-tag line-white text-lg">19:00</view>
+              <view class="cu-tag bg-white text-blue text-lg">公开组四人雪车第四轮</view>
+              <view class="cu-tag line-white text-lg">11:20</view>
             </view>
             <view class="margin-top-sm text-content flex flex-direction">
               <view class="flex align-center">
                 <image class="medal margin-right-sm" src="/images/gold.png"></image> 
-                <image class="flag-in-timeline" src="/images/nation/CHN.png"></image> 
-                <view class="text-bold margin-right-xs"> CHN </view>
-                <view class="flex-sub"> 隋文静 韩聪</view>
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 弗朗西斯科·弗里德里希</view>
               </view>
               <view class="flex align-center margin-top-xs">
                 <image class="medal margin-right-sm" src="/images/silver.png"></image> 
-                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image> 
-                <view class="text-bold margin-right-xs"> ROC </view>
-                <view class="flex-sub"> 叶夫根尼娅·塔拉索娃</view>
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 约翰内斯·洛赫纳</view>
               </view>
               <view class="flex align-center margin-top-xs">
                 <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
-                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image> 
-                <view class="text-bold margin-right-xs"> ROC </view>
-                <view class="flex-sub"> 阿纳斯塔西娅·米希娜</view>
+                <image class="flag-in-timeline" src="/images/nation/CAN.png"></image> 
+                <view class="text-bold margin-right-xs"> CAN </view>
+                <view class="flex-sub"> 贾斯廷·克里普斯</view>
               </view>
             </view>
           </view>
         </view>
-
-        <view class="cu-time">02-20</view>
-        <view class="cu-item text-blue">
-          <view class="timeline-bg content shadow">
-            <view class="cu-capsule radius">
-              <view class="cu-tag bg-white text-blue text-lg">冰壶女子组团体金牌赛</view>
-              <view class="cu-tag line-white text-lg">09:05</view>
-            </view>
-            <view class="margin-top-sm text-content flex flex-direction">
-              <view class="flex">
-                <image class="flag-in-timeline" src="/images/nation/JPN.png"></image> 
-                <view class="flex-sub"> 日本</view>
-                <view class="flex-twice">3</view>
-              </view>
-              <view class="flex margin-top-sm">
-                <image class="flag-in-timeline" src="/images/nation/GBR.png"></image>
-                <view class="flex-sub text-bold"> 英国</view>
-                <view class="flex-twice text-bold">10</view>
-              </view>
-            </view>
-          </view>
-        </view>
-
+        <!-- TODO 把前三名这种封装为模板 -->
         <view class="cu-item text-blue">
           <view class="timeline-bg content shadow">
             <view class="cu-capsule radius">
@@ -106,8 +105,37 @@ https://olympics.com/beijing-2022/olympic-games/zh/results/all-sports/olympic-sc
         <view class="cu-item text-blue">
           <view class="timeline-bg content shadow">
             <view class="cu-capsule radius">
-              <view class="cu-tag bg-white text-blue text-lg">公开组四人雪车第四轮</view>
-              <view class="cu-tag line-white text-lg">11:20</view>
+              <view class="cu-tag bg-white text-blue text-lg">高山滑雪混合团体决赛</view>
+              <view class="cu-tag line-white text-lg">10:28</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/AUT.png"></image> 
+                <view class="text-bold margin-right-xs"> AUT </view>
+                <view class="flex-sub"> 卡塔琳娜·特吕佩</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 莱娜·迪尔</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/NOR.png"></image> 
+                <view class="text-bold margin-right-xs"> NOR </view>
+                <view class="flex-sub"> 玛丽亚·特蕾丝·特维贝格</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">公开组四人雪车第三轮</view>
+              <view class="cu-tag line-white text-lg">09:30</view>
             </view>
             <view class="margin-top-sm text-content flex flex-direction">
               <view class="flex align-center">
@@ -131,28 +159,118 @@ https://olympics.com/beijing-2022/olympic-games/zh/results/all-sports/olympic-sc
             </view>
           </view>
         </view>
-
-        <view class="cu-item text-blue">  <!-- 时间轴上的蓝色 -->
+        
+        <view class="cu-item text-blue">
           <view class="timeline-bg content shadow">
             <view class="cu-capsule radius">
-              <view class="cu-tag bg-white text-blue text-lg">冰球男子组团体金牌赛</view>
-              <view class="cu-tag line-white text-lg">12:10</view>
+              <view class="cu-tag bg-white text-blue text-lg">冰壶女子组团体金牌赛</view>
+              <view class="cu-tag line-white text-lg">09:05</view>
             </view>
             <view class="margin-top-sm text-content flex flex-direction">
               <view class="flex">
-                <image class="flag-in-timeline" src="/images/nation/FIN.png"></image> 
-                <view class="flex-sub text-bold"> 芬兰</view>
-                <view class="flex-twice text-bold">2</view>
+                <image class="flag-in-timeline" src="/images/nation/JPN.png"></image> 
+                <view class="flex-sub"> 日本</view>
+                <view class="flex-twice">3</view>
               </view>
               <view class="flex margin-top-sm">
-                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image>
-                <view class="flex-sub"> ROC</view>
-                <view class="flex-twice">1</view>
+                <image class="flag-in-timeline" src="/images/nation/GBR.png"></image>
+                <view class="flex-sub text-bold"> 英国</view>
+                <view class="flex-twice text-bold">10</view>
               </view>
             </view>
           </view>
         </view>
         
+        <view class="cu-time">02-19</view>
+
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">女子组双人雪车第四轮</view>
+              <view class="cu-tag line-white text-lg">21:30</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 劳拉·诺尔特</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/GER.png"></image> 
+                <view class="text-bold margin-right-xs"> GER </view>
+                <view class="flex-sub"> 玛丽亚马·雅曼卡</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/USA.png"></image> 
+                <view class="text-bold margin-right-xs"> USA </view>
+                <view class="flex-sub"> 埃拉娜·迈耶斯·泰勒</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">花样滑冰混合组双人滑</view>
+              <view class="cu-tag line-white text-lg">19:00</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/CHN.png"></image> 
+                <view class="text-bold margin-right-xs"> CHN </view>
+                <view class="flex-sub"> 隋文静 韩聪</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image> 
+                <view class="text-bold margin-right-xs"> ROC </view>
+                <view class="flex-sub"> 叶夫根尼娅·塔拉索娃</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/ROC.png"></image> 
+                <view class="text-bold margin-right-xs"> ROC </view>
+                <view class="flex-sub"> 阿纳斯塔西娅·米希娜</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cu-item text-blue">
+          <view class="timeline-bg content shadow">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-white text-blue text-lg">速度滑冰 女子集体出发决赛</view>
+              <view class="cu-tag line-white text-lg">17:00</view>
+            </view>
+            <view class="margin-top-sm text-content flex flex-direction">
+              <view class="flex align-center">
+                <image class="medal margin-right-sm" src="/images/gold.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/NED.png"></image> 
+                <view class="text-bold margin-right-xs"> NED </view>
+                <view class="flex-sub"> 伊雷妮·斯豪滕</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/silver.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/CAN.png"></image> 
+                <view class="text-bold margin-right-xs"> CAN </view>
+                <view class="flex-sub"> 伊万妮·布隆丁</view>
+              </view>
+              <view class="flex align-center margin-top-xs">
+                <image class="medal margin-right-sm" src="/images/bronze.png"></image> 
+                <image class="flag-in-timeline" src="/images/nation/ITA.png"></image> 
+                <view class="text-bold margin-right-xs"> ITA </view>
+                <view class="flex-sub"> 弗兰切丝卡·洛洛布里吉达</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        
+
       </view>
     </view>
   </block>
